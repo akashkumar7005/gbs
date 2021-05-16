@@ -11,16 +11,31 @@
 <body>
     <header>
       <div class="header_logos">
+        <div class="collapsed_navbar">
+          <div id="mySidebar" class="sidebar">
+            <a class="nav-link" href="#">Locations</a>
+            <a class="nav-link" href="#">Innovations</a>
+            <a class="nav-link" href="#">Data and Security</a>
+            <a class="nav-link" href="#">Efficiency</a>
+            <a class="nav-link" href="#">Renewable Energy</a>
+            <a class="nav-link" href="#">Efficiency</a>
+            <a class="nav-link" href="#">Gallery</a>
+            <a class="nav-link" href="#">Life@</a>
+            <a class="nav-link" href="#">Podcast</a>
+          </div>
+          
+          <div id="main">
+            <button class="openbtn" onclick="openNav()">&#9776; </button>
+          </div>
+        </div>
      <img src="../images/google_logo.svg" alt="Google Logo">
       <p>Data Centers</p>
     </header>
   </div>
     <nav>
+      <div class="expanded-navbar">
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <div class="container-fluid">
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
+
               <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav">
                     <a class="nav-link" href="#">Locations</a>
@@ -37,6 +52,9 @@
               </div>
             </div>
           </nav>
+        </div>
+
+       
     </nav>
 
     <section class="image">
