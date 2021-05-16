@@ -1,0 +1,90 @@
+.accordion
+{
+  width:90%;
+  margin:2rem auto;
+  border:none;
+  outline: none
+ 
+  }
+.accordion-item
+{
+  margin:1rem 0;
+/* box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.25); */
+
+}
+.accordion-item-header
+{
+  padding:0.5rem 3rem 0.5rem 1rem;
+  min-height:3.5rem;
+  line-height: 1.25rem;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+  
+}
+.accordion-item-header::after
+{
+  content:"\02C5";
+  font-size:2rem;
+  position: absolute;
+  right:1rem;
+  color: blue;
+}
+.accordion-item-header.active::after
+{
+  transform: rotate(180deg);
+}
+.accordion-item-body
+{
+  display: none;
+  padding: 1rem;
+  line-height: 1.5rem;
+  border-top:2px solid blue;
+  transition:0.2s ease-in
+}
+.accordion-item-header.active + .accordion-item-body
+{
+  display:block;
+}
+
+
+
+.image
+{
+  background:url("../images/faq_image.jpg");
+  height:300px
+}
+
+.image-text
+{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left:5% ;
+  height:100%;
+  color:#fff;
+}
+
+header img 
+{
+  
+  width:100px;
+  height:50px;
+  padding-left: 10px
+}
+
+header p
+{
+  padding:4px 0px 5px 3px;
+  font-size: 25px;
+
+}
+
+.header_logos
+{
+  display:flex;
+  flex-direction: row;
+}
+
