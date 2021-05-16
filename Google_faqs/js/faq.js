@@ -11,12 +11,17 @@ accordionItemHeaders.forEach(accordionItemHeaders=>{
 
 
 function openNav() {
-    document.getElementById("mySidebar").style.width = "250px";
-    document.getElementById("main").style.marginLeft = "250px";
+    document.getElementById("mySidebar").style.width = "300px";
+    document.getElementById("main").style.marginLeft = "300px";
+    document.querySelector(".brand-logo-desktop").classList.add("hide");
+    document.querySelector(".openbtn").classList.add("hide");
   }
   
   /* Set the width of the sidebar to 0 and the left margin of the page content to 0 */
   function closeNav() {
+
     document.getElementById("mySidebar").style.width = "0";
     document.getElementById("main").style.marginLeft = "0";
+    document.querySelector(".brand-logo-desktop").classList.remove("hide");
+    document.querySelector(".openbtn").classList.remove("hide");
   }

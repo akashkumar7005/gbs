@@ -14,7 +14,8 @@
   padding:0.5rem 3rem 0.5rem 1rem;
   min-height:3.5rem;
   line-height: 1.25rem;
-  font-weight: bold;
+  font-size: 24px;
+  font-weight: 400;
   display: flex;
   align-items: center;
   position: relative;
@@ -26,7 +27,7 @@
   font-size:2rem;
   position: absolute;
   right:1rem;
-  color: blue;
+  color: #1a73e8;
 }
 .accordion-item-header.active::after
 {
@@ -35,11 +36,13 @@
 .accordion-item-body
 {
   display: none;
+  font-size: 14px;
   padding: 1rem;
   line-height: 1.5rem;
-  border-top:2px solid blue;
+  border-top:2px solid #1a73e8;
   transition:0.2s ease-in
 }
+
 .accordion-item-header.active + .accordion-item-body
 {
   display:block;
@@ -63,34 +66,70 @@
   color:#fff;
 }
 
-header img 
-{
-  
-  width:100px;
-  height:50px;
-  padding:20px 0px 2px 0px;
-}
 
+
+header img
+{
+  width: 100px;
+  height:50px;
+  padding:20px 0px 2px 0px
+
+}
 header p
 {
-  padding:12px 0px 5px 3px;
+  padding: 12px 0px 5px 3px;
   font-size: 25px;
-
+}
+.navbar-brand 
+{
+  border-bottom: 1px solid;
+  width:300px;
+  margin-bottom: 20px;
+}
+.navbar-brand  p
+{
+  padding:0px 0px 5px 3px;
+  font-size: 25px;
+  display:inline-block;
+  vertical-align: middle;
+  margin-top:0;
+  margin-bottom:0;
+  margin-block-start: 0;
+  margin-block-end: 0;
 }
 
-.header_logos
+.navbar-brand  img
+{
+  width:100px;
+  height:50px;
+  padding:0px 0px 2px 0px;
+  display: inline-block;
+}
+
+.header_logos,.brand-logo-desktop
 {
   display:flex;
-  flex-direction: row;
+  
+}
+.hide{
+  display: none !important;
 }
 
 
-
-.footer-link
+.footer-image img
+{
+  
+  width:120px;
+  height: 40px;
+ padding-left:10px 70px 0px 0px
+}
+.footer-main-links .footer-link
 {
   color: black;
-  padding:0px 8px 0px 8px;
   text-decoration: none;
+font-size: 14px;
+padding: 0px 10px 0px 10px;
+
 }
 
 .footer-link:hover
@@ -98,17 +137,20 @@ header p
   color:black;
 }
 
+
+
 .footer-link-right
 {
   padding-left:100px ;
   color:black;
   text-decoration:none;
 }
-.footer-language option
-{
-  background-color: gray;
-}
 
+.footer-elements
+{
+  display:flex;
+  flex-direction: column;
+}
 
 
 
@@ -143,7 +185,6 @@ header p
 
 /* When you mouse over the navigation links, change their color */
 .sidebar a:hover {
-  font-weight:bold;
   color:black
 }
 
@@ -153,10 +194,10 @@ header p
 .openbtn {
   font-size: 15px;
   cursor: pointer;
-  background-color: silver;
+  /* background-color: silver; */
   color: white;
   /* padding:0px 3px 5px 3px; */
-
+  margin:20px;
   border: none;
 }
 
@@ -165,14 +206,14 @@ header p
 
 #main {
   transition: margin-left .5s; /* If you want a transition effect */
-  padding: 20px;
+  
 }
 
 /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
 
 
 /* Desktop  */
-@media (min-width: 768px) 
+@media (min-width: 993px) 
 {
   .openbtn
   {
@@ -180,7 +221,7 @@ header p
   }
 }
 
-@media(max-width:767px)
+@media(max-width:992px)
 {
   .expanded-navbar
   {
