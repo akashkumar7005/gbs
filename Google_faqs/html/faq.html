@@ -1,174 +1,213 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Frequently asked questions</title>
-    <script src="../js/faq.js" defer></script>
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
-    <link rel="stylesheet" href="../css/faq.css">
-  </head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Frequently asked questions</title>
+  <script src="../js/faq.js" defer></script>
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+  <link rel="stylesheet" href="../css/faq.css">
+</head>
+
 <body>
-    <header>
-      <div class="header_logos">
-        <div class="collapsed_navbar">
-          <div id="mySidebar" class="sidebar">
-            <a class="navbar-brand" href="#">
+  <!-- Headers Elements -->
+  <header>
+    <div class="header_logos">
+      <div class="collapsed_navbar">
+        <div id="mySidebar" class="sidebar">
+          <a class="navbar-brand" href="#">
             <img src="../images/google_logo.svg" alt="Google Logo">
-            <p>Data Centers</p></a>
-            <a class="nav-link" href="#">Locations</a>
-            <a class="nav-link" href="#">Innovations</a>
-            <a class="nav-link" href="#">Data and Security</a>
-            <a class="nav-link" href="#">Efficiency</a>
-            <a class="nav-link" href="#">Renewable Energy</a>
-            <a class="nav-link" href="#">Gallery</a>
-            <a class="nav-link" href="#">Life@</a>
-            <a class="nav-link" href="#">Podcast</a>
-            <a class="nav-link" href="#">FAQ</a>
-          </div>
-          
-          <div id="main">
-            <button class="openbtn" onclick="openNav()">&#9776; </button>
-          </div>
+            <p>Data Centers</p>
+          </a>
+          <a class="nav-link" href="https://www.google.com/about/datacenters/locations/">Locations</a>
+          <a class="nav-link" href="https://www.google.com/about/datacenters/innovations/">Innovations</a>
+          <a class="nav-link" href="https://www.google.com/about/datacenters/data-security/">Data and Security</a>
+          <a class="nav-link" href="https://www.google.com/about/datacenters/efficiency/">Efficiency</a>
+          <a class="nav-link" href="https://www.google.com/about/datacenters/renewable/">Renewable Energy</a>
+          <a class="nav-link" href="https://www.google.com/about/datacenters/gallery/">Gallery</a>
+          <a class="nav-link" href="https://www.google.com/about/datacenters/life/">Life@</a>
+          <a class="nav-link" href="https://www.google.com/about/datacenters/podcast/">Podcast</a>
+          <a class="nav-link" href="#">FAQ</a>
         </div>
-        <div class="brand-logo-desktop">
-     <img src="../images/google_logo.svg" alt="Google Logo">
-      <p>Data Centers</p>
+
+        <div id="main">
+          <button class="sidebar-openbtn" onclick="openNav()">&#9776; </button>
+        </div>
+      </div>
+      <div class="brand-logo-desktop">
+        <img src="../images/google_logo.svg" alt="Google Logo">
+        <p>Data Centers</p>
+      </div>
     </div>
-    </header>
+  </header>
+
+  <!-- Main Navigation Bar component for Large devices,Laptop,Desktop and above -->
+  <nav>
+    <div class="expanded-navbar">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-link" href="https://www.google.com/about/datacenters/locations/">Locations</a>
+            <a class="nav-link" href="https://www.google.com/about/datacenters/innovations/">Innovations</a>
+            <a class="nav-link" href="https://www.google.com/about/datacenters/data-security/">Data and Security</a>
+            <a class="nav-link" href="https://www.google.com/about/datacenters/efficiency/">Efficiency</a>
+            <a class="nav-link" href="https://www.google.com/about/datacenters/renewable/">Renewable Energy</a>
+            <a class="nav-link" href="https://www.google.com/about/datacenters/gallery/">Gallery</a>
+            <a class="nav-link" href="https://www.google.com/about/datacenters/life/">Life@</a>
+            <a class="nav-link" href="https://www.google.com/about/datacenters/podcast/">Podcast</a>
+            <a class="nav-link active" href="#">FAQ</a>
+          </div>
+        </div>
+    </div>
+  </nav>
   </div>
-    <nav>
-      <div class="expanded-navbar">
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  </nav>
 
-              <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                <div class="navbar-nav">
-                    <a class="nav-link" href="#">Locations</a>
-                  <a class="nav-link" href="#">Innovations</a>
-                  <a class="nav-link" href="#">Data and Security</a>
-                  <a class="nav-link" href="#">Efficiency</a>
-                  <a class="nav-link" href="#">Renewable Energy</a>
-                  <a class="nav-link" href="#">Gallery</a>
-                  <a class="nav-link" href="#">Life@</a>
-                  <a class="nav-link" href="#">Podcast</a>
-                  <a class="nav-link active" aria-current="page" href="#">FAQ</a>
-                </div>
-              </div>
-            </div>
-          </nav>
+  <!-- Section for Background Image and and Background Text -->
+  <section class="image-middle" id="image-section">
+    <div class="image-text">
+      <h3>Frequently asked questions</h3>
+      <p>Here are the answers to some of the most frequently asked questions about our data centers.</p>
+    </div>
+  </section>
+
+
+
+  <!-- Accordion Section -->
+  <section id="accordion-section">
+    <div class="accordion">
+      <div class="accordion-item">
+        <div class="accordion-item-header">
+          What is a data center?
         </div>
-
-       
-    </nav>
-
-    <section class="image-middle" id="image-section">
-      <div class="image-text">
-        <h3>Frequently asked questions</h3>
-        <p>Here are the answers to some of the most frequently asked questions about our data centers.</p>
-      </div>
-
-       </section>
-    
-    <section id="accordion-section">
-      <div class="accordion">
-        <div class="accordion-item">
-          <div class="accordion-item-header">
-            What is a data center?
-          </div>
-          <div class="accordion-item-body">
-            <div class="accordion-item-body-content">
-              A data center is a facility with many computers that store and process large amounts of information. Our data centers keep all of Google’s products and services up and running around the clock and around the world. Whenever you access Gmail, edit your documents, or search for information on Google, you're using one of our data centers and have the power of a supercomputer at your fingertips. Learn more about our approach to environmentally responsible data centers.
-            </div>
-          </div>
-        </div>
-
-        <div class="accordion-item">
-          <div class="accordion-item-header">
-            Can I visit a data center?
-          </div>
-          <div class="accordion-item-body">
-            <div class="accordion-item-body-content">
-              Because we take security very seriously at our data centers, we cannot offer public tours at this time. However, you can watch our 360° tour of our data center at The Dalles, Oregon and browse our photo gallery.
-            </div>
-          </div>
-        </div>
-
-        <div class="accordion-item">
-          <div class="accordion-item-header">
-            What's it like to work at the data center?
-          </div>
-          <div class="accordion-item-body">
-            <div class="accordion-item-body-content">
-              Google data center staff ensure that the facility’s computers are running at their highest speed and efficiency 24 hours a day, seven days a week. Our jobs require a variety of skills and backgrounds — from entry-level technology assistants to experienced data center managers. Meet the amazing people behind the technology that lets us build for everyone, and browse our career opportunities.
-            </div>
-          </div>
-        </div>
-
-        <div class="accordion-item">
-          <div class="accordion-item-header">
-            How does Google power its data centers?
-          </div>
-          <div class="accordion-item-body">
-            <div class="accordion-item-body-content">
-              In 2017, Google achieved a major milestone: purchasing 100% renewable energy to match our annual electricity consumption for global operations, including our data centers and offices. Our large-scale procurement of wind and solar power is a cornerstone of our sustainability efforts, and has made Google the world’s largest corporate buyer of renewable energy. Learn more about how we're sourcing clean energy for a better future.</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="accordion-item">
-          <div class="accordion-item-header">
-            Can I take photos of the data center?
-          </div>
-          <div class="accordion-item-body">
-            <div class="accordion-item-body-content">
-              We’ve done the work for you! Take a look inside Google’s data centers around the world and see the technology, people, and places that keep our products online.
-            </div>
-          </div>
-        </div>
-        
-        <div class="accordion-item">
-          <div class="accordion-item-header">
-            I’m a member of the media and am interested in data centers. 
-          </div>
-          <div class="accordion-item-body">
-            <div class="accordion-item-body-content">
-              We thank you for your interest. Please visit our Press Corner or contact our press team at press@google.com.
-            </div>
+        <div class="accordion-item-body">
+          <div class="accordion-item-body-content">
+            A data center is a facility with many computers that store and process large amounts of information. Our
+            data centers keep all of Google’s products and services up and running around the clock and around the
+            world. Whenever you access <a href="https://mail.google.com/">Gmail</a>, edit your <a
+              href="https://drive.google.com/">documents</a>, or search for information on <a
+              href="https://www.google.com/">Google</a>, you're using one
+            of our data centers and have the power of a supercomputer at your fingertips. <a
+              href="https://sustainability.google/">Learn more about our approach
+              to environmentally responsible data centers</a>.
           </div>
         </div>
       </div>
 
-    </section>
+      <div class="accordion-item">
+        <div class="accordion-item-header">
+          Can I visit a data center?
+        </div>
+        <div class="accordion-item-body">
+          <div class="accordion-item-body-content">
+            Because we take <a href="https://www.google.com/about/datacenters/data-security/">security</a> very
+            seriously at our data centers, we cannot offer public tours at this time.
+            However, you can watch our <a href="https://www.youtube.com/watch?v=zDAYZU4A3w0">360° tour of our data
+              center at The Dalles, Oregon</a> and <a href="https://www.google.com/about/datacenters/gallery/">browse
+              our photo gallery</a>.
+          </div>
+        </div>
+      </div>
 
-    
-      <footer class="bg-light text-center text-lg-start">
-        
-        <div class="text-center p-3" >
-                  <div class="footer-image">
-                  <img  src="../images/google_grayscale.png" alt="Google_Logo_gray" >
-                </div>
-                  <div class="footer-main-links">
-                  <a class="footer-link" href="#">Privacy</a>
-                  <a class="footer-link" href="#">Terms</a>
-                  <a class="footer-link" href="#">About Google</a>
-                  <a class="footer-link" href="#"> Press Corner</a>
-                  <a class="footer-link" href="#">Careers</a>
-                  <a class="footer-link" href="#">Sustainability</a>
-                  <a class="footer-link" href="#">Google Cloud</a>
-                  </div>
-                  <div class="footer-link-right">
-                  <a  href="#"><i class="fas fa-question-circle"></i><span>Help</span></a>
-                  <select name="language" class="footer-language">
-                    <option value="English">English</option>
-                    <option value="Dansk">Dansk</option>
-                    <option value="Deutsch">Deutsch</option>
-                    <option value="Esponal">Esponal</option>
-                  </select>
-                </div>
-                  </div>
-                  
-                </footer>
+      <div class="accordion-item">
+        <div class="accordion-item-header">
+          What's it like to work at the data center?
+        </div>
+        <div class="accordion-item-body">
+          <div class="accordion-item-body-content">
+            Google data center staff ensure that the facility’s computers are running at their highest speed and
+            efficiency 24 hours a day, seven days a week. Our jobs require a variety of skills and backgrounds — from
+            entry-level technology assistants to experienced data center managers.<a
+              href="https://www.google.com/about/datacenters/life/"> Meet the amazing people behind the
+              technology</a> that lets us build for everyone, and <a
+              href="https://careers.google.com/jobs/results/?company=Google&jlo=en_US&q=%22data%20center%2a%22">browse
+              our career opportunities</a>.
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <div class="accordion-item-header">
+          How does Google power its data centers?
+        </div>
+        <div class="accordion-item-body">
+          <div class="accordion-item-body-content">
+            In 2017, Google achieved a major milestone: purchasing 100% renewable energy to match our annual electricity
+            consumption for global operations, including our data centers and offices. Our large-scale procurement of
+            wind and solar power is a cornerstone of our sustainability efforts, and has made Google the<a
+              href="https://www.blog.google/outreach-initiatives/environment/meeting-our-match-buying-100-percent-renewable-energy/">
+              world’s largest
+              corporate buyer of renewable energy</a>. Learn more about how<a
+              href="https://www.google.com/about/datacenters/renewable/"> we're sourcing clean energy for a better
+              future</a>.
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <div class="accordion-item-header">
+          Can I take photos of the data center?
+        </div>
+        <div class="accordion-item-body">
+          <div class="accordion-item-body-content">
+            We’ve done the work for you! <a href="https://www.google.com/about/datacenters/gallery/">Take a look inside
+              Google’s data centers</a> around the world and see the
+            technology, people, and places that keep our products online.
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <div class="accordion-item-header">
+          I’m a member of the media and am interested in data centers.
+        </div>
+        <div class="accordion-item-body">
+          <div class="accordion-item-body-content">
+            We thank you for your interest. Please visit our <a href="https://www.blog.google/press/">Press Corner</a>
+            or contact our press team at<a href="#"> press@google.com</a>.
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- Footer Elements enclosed within footer tag -->
+  <footer class="bg-light text-center text-lg-start">
+
+    <div class="text-center p-3">
+      <div class="footer-image">
+        <img src="../images/google_grayscale.png" alt="Google_Logo_gray">
+      </div>
+      <div class="footer-main-links">
+        <a class="footer-link" href="https://policies.google.com/privacy">Privacy</a>
+        <a class="footer-link" href="https://policies.google.com/terms">Terms</a>
+        <a class="footer-link" href="https://about.google/">About Google</a>
+        <a class="footer-link" href="https://www.blog.google/press/"> Press Corner</a>
+        <a class="footer-link"
+          href="https://careers.google.com/jobs/results/?company=Google&jlo=en_US&q=%22data%20center%2a%22">Careers</a>
+        <a class="footer-link" href="https://sustainability.google/">Sustainability</a>
+        <a class="footer-link" href="https://cloud.google.com/">Google Cloud</a>
+      </div>
+      <div class="footer-link-right">
+        <a href="#"><i class="fas fa-question-circle"></i><span>Help</span></a>
+        <select name="language" class="footer-language">
+          <option value="English">English</option>
+          <option value="Dansk">Dansk</option>
+          <option value="Deutsch">Deutsch</option>
+          <option value="Esponal">Esponal</option>
+        </select>
+
+      </div>
+    </div>
+
+  </footer>
 
 </body>
+
 </html>
